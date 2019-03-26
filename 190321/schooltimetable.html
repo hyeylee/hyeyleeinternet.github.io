@@ -1,0 +1,58 @@
+<!DOCTYPEhtml> <!--schooltimetable.html-->
+<html lang="ko">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>table, tr, th, td {
+border: 1px solid black; border-collapse: collapse;
+}
+</style> <!-- border-collapse: collapse 단선으로, 반대는 separate -->
+<title>시간표</title>
+</head>
+<body>
+<style>
+.subject1{ background-color:yellow;}
+.subject2{ background-color:slateblue;}
+.subject3{ background-color:violet;}
+.subject4{ background-color:springgreen;}
+.subject5{ background-color:lightblue;}
+.subject6{ background-color:lightcoral;}
+.subject7{ background-color:palevioletred;}
+.subject8{ background-color:salmon;}
+</style>
+<table>
+ <caption> ~혜영쓰 시간표~ </caption>
+ <thead>
+ <tr>
+  <th width="50"></th> <th width="100">월</th><th>화</th><th>수</th><th>목</th><th width = "100">금</th>
+ </tr>
+ <tbody align=center>
+ <tr>
+  <td>9</td><td></td><td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+  <td>10</td><td></td><td></td><td></td><td rowspan="2" class="subject3">인터넷 프로그래밍</td> <td></td>
+ </tr>
+ <tr>
+  <td>11</td><td rowspan="2" class="subject5">비지니스 인문학 </td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+ <td>12</td><td></td><td></td><td rowspan="3" class="subject1">과학기술의 융합적이해</td><td></td>
+ </tr>
+ <tr>
+ <td>1</td><td></td><td class="subject2">디지털 논리회로</td><td rowspan="2" class="subject4">영어회화2</td><td></td>
+ </tr>
+ <tr>
+  <td>2</td><td rowspan="2" class="subject2"> 디지털 논리회로</td><td rowspan="4" class="subject6">c++프로그래밍</td><td></td>
+ </tr>
+  <tr>
+  <td>3</td><td></td><td rowspan="2" class="subject7">캠퍼스 멘토링</td><td></td>
+ </tr>
+  <tr>
+  <td>4</td><td></td><td rowspan="3" class="subject3">인터넷프로그래밍</td><td rowspan="2" class="subject8">컴퓨터 및 IT의 이해</td>
+ </tr>
+  <tr>
+  <td>5</td><td></td><td></td>
+ </tr>
+   </tbody>
+ </table>
+</body>
+</html>
