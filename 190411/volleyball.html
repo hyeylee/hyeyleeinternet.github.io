@@ -1,0 +1,54 @@
+<!doctype html> <!-- volleyball.html -->
+<html><head><meta charset="utf-8"/><meta name="viewport"content="width=device-width,initial-scale=1"/>
+<title>폼 과제</title>
+<script>
+function team(obj) {
+var name_a = ["김규민", "한선수", "황승빈", "이지훈", "심홍석", "미차 가스파리니", "김동혁", "김학민", "곽승석", "정지석", "조재영", "최진성", "백광현", "진상헌", "임동혁", "이승호", "진성태", "정성민"];
+var name_b = ["송희채", "타이스", "고준용", "김나운", "박철우", "이강원", "손태훈", "김정윤", "박상준", "지태환", "박상하", "정준혁", "이민욱", "황동일", "김형진", "김강녕", "이지석", "백계중", "류윤식"];
+var name_c = ["황경민", "안준찬", "한성정", "나경복", "최현규", "김정환", "이동석", "아가메즈", "구도현", "윤봉우", "김시훈", "우상조", "박진우", "김광국", "유광우", "하승우", "노재욱", "신동광", "이수범", "이상욱", "김석민", "김동훈", "김량우"];
+var name_d = ["최석기", "박태환", "조근호", "안우재", "이재목", "신으뜸", "김인혁", "최홍석", "서재덕", "김진만", "공재학", "손주상", "금태용", "이태호", "박성률", "권준형", "이호건", "강민웅", "이승현", "이광호"];
+var name_e = ["차영석", "최민호", "홍민기", "신영석", "김재휘", "이시우", "허수봉", "박주형", "전광인", "문성민", "강병모", "파다르", "라광균", "이대성", "여오현", "함형진", "이승원", "이원중", "송준호"];
+var name_f = ["정동근", "김정호", "황두연", "박광희", "채진우", "한국민", "강영준", "펠리페", "황택의", "최익제", "양준식", "전진용", "하현용", "이선규", "김홍정", "이수황", "정민수", "곽동혁"];
+var name_g = ["송명근", "이시몬", "차지환", "요스바니", "심경섭", "이승준", "조재성", "전병선", "손주형", "김요한", "박원빈", "장준호", "한상길", "전진선", "곽명우", "이민규", "이효동", "이창윤", "이강주", "조국기"];
+
+var target = document.getElementById("namex");
+ if(obj.value == "a") var k = name_a;
+else if(obj.value == "b") var k = name_b;
+else if(obj.value == "c") var k = name_c;
+else if(obj.value == "d") var k = name_d;
+else if(obj.value == "e") var k = name_e;
+else if(obj.value == "f") var k = name_f;
+else if(obj.value == "g") var k = name_g;
+
+ 
+  target.options.length = 0;
+ 
+  for (x in k) {
+    var opt = document.createElement("option");
+    opt.value = k[x];
+    opt.innerHTML = k[x];
+    target.appendChild(opt);
+    }
+    }
+    </script>
+    
+</head>
+<body>
+<section>
+<fieldset>
+<legend>volleyball</legend>
+<label for="teamx">TEAM</label>
+<select id="teamx" name="volleyballteam" onchange ="team(this)">
+<option value="a"selected>대한항공</option>
+<option value="b">삼성화재</option>
+<option value="c">우리카드</option>
+<option value="d">한국전력</option>
+<option value="e">현대캐피탈</option>
+<option value="f">KB손해보험</option>
+<option value="g">OK저축은행</option></select>
+
+<label for="name">NAME</label>
+<select id="namex" name="name"></select>
+</fieldset></section>
+<img src = "volleyball.jpg" usemap="#volleyball" alt="volleyball">
+</body></html>
