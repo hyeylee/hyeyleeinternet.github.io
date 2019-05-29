@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- portfolio.html -->
+<html><head><meta charset ="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+body{
+
+  text-align :center;
+  font-family:"arial";
+}
+.imgontext{
+    position: relative;
+    background-image: url(https://hyeylee.github.io/homework/images/mac.png);
+    width: 960px;
+    height: 604px;
+    background-size: cover;
+}
+.imgontext .content{
+     position: absolute;
+     top:40%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     font-size:5rem;
+     color: white;
+     z-index: 2;
+     text-align: center;
+}
+.imgontext .aside{
+     position: absolute;
+     text-align: center;
+     width:200px; height:50px;
+     top:75%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     padding: 20px 0;
+     margin: 4px;
+     cursor: pointer;
+     border-radius:10px;
+}
+.bbutton{
+    width:150px;
+    background-color: #D6F883;
+    border: none;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius:10px;
+}
+header{
+  background-image:url('https://hyeylee.github.io/homework/images/photo.jpg');
+  width:1200px; height:500px;
+  font-size: 25px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+nav, section, article, aside, footer
+{padding:8px; width:1000px; text-align:center; margin: 0 auto;}
+headerimg {width:990px; height:200px;}
+footer{height:50px; clear:both;}
+nav ul{margin:0; padding:0;}
+nav ul li{display:inline; margin:5px;}
+aside ul{margin:0; padding:0;}
+aside ul li{display:block; margin:5px;}
+aside ul li img{width : 50px; height:50px;}
+a:link {color:black;background-color:transparent;text-decoration:none;}
+a:visited {color:black;background-color:transparent;text-decoration:none;}
+a:hover {color:red;background-color:transparent;text-decoration:underline;}
+a:active {color:black;background-color:transparent;text-decoration:none;}
+@media only screen and(max-width:768px) { [class*="col-"]{width : 100%;} }
+</style>
+<title>인터넷프로그래밍 포트폴리오</title></head>
+<body>
+<header>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><h2>COMPUTER ENGINEER</h2>
+</header>
+<nav class="col-6 menu">
+<ul>
+<li><a href="https://hyeylee.github.io/homework/portfolio.html">MAIN</a></li>
+<li><a href="https://hyeylee.github.io/homework/resume.html">RESUME</a></li>
+<li><a href="https://hyeylee.github.io/homework/resume.html">SELF-INTRODUCTION</a></li>
+<li><a href="https://hyeylee.github.io/homework/projects.html">PROJECTS</a></li>
+<li><a href="https://hyeylee.github.io/homework/timetable.html">TIME TABLE</a></li>
+<li><a href="https://hyeylee.github.io/homework/contact.html">CONTACT</a></li>
+</ul>
+</nav><!-- main -->
+<section class="col-2">
+<div class="imgontext">
+<div class="content">
+<input type="button" class="bbutton" value="이력서바로가기" onClick="window.open('https://hyeylee.github.io/homework/resume.html')"/>
+<input type="button" class="bbutton" value="자기소개서바로가기" onClick="window.open('https://hyeylee.github.io/homework/resume.html')"/>
+</div>
+<img src="https://hyeylee.github.io/homework/images/asideimg.png" class = "aside" onClick="window.open('https://www.instagram.com')"/>
+</div>
+</section>
+<footer>
+<p>$copy;2019 Made by LEE HYE YOUNG . All rights reserved.</p>
+</footer>
+</body>
+</html>
